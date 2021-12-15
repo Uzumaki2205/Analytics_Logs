@@ -1,0 +1,34 @@
+<header class="panel-heading">
+    <h3 class="panel-title">Filtering rows</h3>
+</header>
+<div class="panel-body">
+    <table class="table table-bordered table-hover toggle-circle" id="exampleFootableFiltering" data-paging="true"
+        data-filtering="true" data-sorting="true">
+        <thead>
+            <tr>
+                <th data-name="id" data-type="number" data-breakpoints="xs">ID</th>
+                <th data-name="time">Time</th>
+                <th data-name="ip">IP</th>
+                <th data-name="query">Query</th>
+                <th data-name="status">Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each data}}
+            <tr>
+                <td>{{ sum @index}}</td>
+                <td>{{ this.time }}</td>
+                <td>{{ this.ip }}</td>
+                <td>{{this.param}}</td>
+                <td>
+                    {{#if (is_sqli this.type)}}
+                    <span class="badge badge-table badge-danger">SQLI</span>
+                    {{else}}
+                    <span class="badge badge-table badge-success">Safe</span>
+                    {{/if}}
+                </td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>

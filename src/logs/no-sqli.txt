@@ -1,0 +1,3 @@
+06/Dec/2021:04:53:09 <AUZ1_damw_3_detai_PKS> 10.1.1.22 <AUZ1_damw_3_detai_PKS> This is normal text
+03/Oct/2021:03:53:09 <AUZ1_damw_3_detai_PKS> 10.1.1.8 <AUZ1_damw_3_detai_PKS> Normal 1
+02/Feb/2021:03:53:09 <AUZ1_damw_3_detai_PKS> 10.1.2.44 <AUZ1_damw_3_detai_PKS> Its normal text 3
